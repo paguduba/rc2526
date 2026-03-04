@@ -1,0 +1,25 @@
+/*
+repaso rapido:
+	VARIABLE: 
+		mayuscula
+		pueden ser libres (sin valor) o instanciables.
+		pueden ser por defecto (cuando no nos importa el valor)
+		No es necesario declarar las variables
+	UNIFICACION
+		'='
+		dos terminos se unifican si son identicos (caracter a caracter , a excepcion de los parentesis)
+	OPERADOR DE IDENTIDAD: 
+		'=='
+	comparador de expresiones aritmetica
+		'=:='
+	OPERADOR |
+		separa el primer elemento de la lista del resto
+		Utilizado por el principio de induccion
+	PREDICADOS REVERSIBLES
+		con la misma relacion indicada, comprueba si algo es cierto, o genera una respuesta correcta
+	
+-------------------------------------------------------------------------------------------------------------
+	
+	length(LISTA, NUM_ELEMENTOS)
+	append( _ , _ , LISTA)
+*/
