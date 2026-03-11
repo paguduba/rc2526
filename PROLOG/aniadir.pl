@@ -4,6 +4,6 @@
 	que lista con la lista ListaF añadida al final.
 */
 
-	aniadir(A, [], A).
-	aniadir(A, [Cab|Res], [Cab|R2]) :- aniadir(A, Res, R2 ).
+	aniadir([], A, A).
+	aniadir([Cab|Res], A, [Cab|R2]) :- aniadir(Res, A, R2 ).
 	
