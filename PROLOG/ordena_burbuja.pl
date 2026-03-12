@@ -15,5 +15,9 @@ ordenada([]).
 ordenada([_]).
 ordenada([Cab |Rest]):- Rest = [Cab2|_],  Cab =< Cab2, ordenada(Rest).
 
-ordenada_burbuja(A):- ordenada(A).
-ordenada_burbuja([Cab1, Cab2|R]):- R2 as [Cab2, Cab1|R], ordenada(R2).
+ordenada_burbuja(A, A):- ordenada(A).
+
+ordenada_burbuja(A, L):- append(L1, [Elem1, Elem2 | Res],A), 
+						Elem1 > Elem2,
+						append(L1, [Elem2, Elem1 | Res], Sig),
+						ordenada_burbuja(Sig, L).
