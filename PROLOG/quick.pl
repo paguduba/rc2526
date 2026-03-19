@@ -13,7 +13,7 @@
  
 */
 
-divide(E,[],[],[]).
+divide(_,[],[],[]).
 divide(E, [Cab|Res], [Cab|R2], May) :- Cab =< E, divide(E,Res,R2,May).
 divide(E, [Cab|Res], Men, [Cab|R2]) :- Cab > E, divide(E,Res,Men,R2). 
 
