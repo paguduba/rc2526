@@ -1,0 +1,13 @@
+/*
+ARBOLES BINARIOS:
+- implementados de forma recursiva
+- Representacion:		Ar(Et, HIz, HDe)--> Arbol(Etiqueta, Hijo I, Hijo D)
+- tenemos un arbol nulo, o vacio, que es el caso mas pequeño
+- Es nulo (nil()   o   (ho)  nil<--constante)
+- 
+
+
+ARBOL 
+Arbol1 = a(1,a(2,nil,nil),a(3, nil, a(4,nil,nil))).
+
+*/
