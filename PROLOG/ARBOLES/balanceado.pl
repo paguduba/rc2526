@@ -34,7 +34,7 @@ crea_bin_Busqueda(L, A):- sort(L,L2), crea_abb(L2,A).
 crea_abb([],nil).
 crea_abb([A],a(A,nil,nil)).
 crea_abb(L, a(N,Hi,Hd)):-
-	length(L, Tam), Pos is round(Tam/ 2),
+	length(L, Tam), Pos0 is round(Tam/ 2), Pos is Pos0 - 1,
 	length(L1,Pos),
 	append(L1,[N|L2], L),
 	crea_abb(L1, Hi),
