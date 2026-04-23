@@ -10,8 +10,9 @@ crea_ag([E], _ , a(E,[]) ).
 crea_ag([C|R], N , a(C,ListaA) ):- length(R,L), L=<N, 
 						crea_lista_arboles(R, ListaA).
 
-crea_ag([C|L], N , a(C,List)):- length(L2, N), append(L2,L3,L),
-						crea_ag(L2, N , ListaA), crea_ag(L3,N,ListaB), append([ListaA], [ListaB], List).
+crea_ag([C|L], N , a(C,List)):- N2 is N - 1, length(L3, N2), append(L2,L3,L),
+						crea_ag(L2,N, ListaA), crea_lista_arboles(L3,ListaB), append([ListaA], ListaB, List).
+
 
 /*
 crea_lista_arboles(ListaE, ListaA).
