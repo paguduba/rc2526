@@ -2,6 +2,16 @@
 
 /*
 problem2(2,R), sudoku2(R), maplist(labeling([ff]), R),maplist(portray_clause,R).
+
+se debe de hacer un blocks2 para el hyper_sudoku
+
+blocks2([],[],[]).
+blocks2([_],[_],[_]).
+blocks([_,A,B,C|R1],[_,D,E,F|R2],[_,G,H,I|R3]):-
+	all_distinct([A,B,C,D,E,F,G,H,I]),
+	blocks2(R1,R2,R3).
+			
+
 */
 
 sudoku(Rows):- 
