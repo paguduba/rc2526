@@ -1,6 +1,8 @@
 :- use_module(library(clpfd)).
 
-
+/*
+problem2(2,R), sudoku2(R), maplist(labeling([ff]), R),maplist(portray_clause,R).
+*/
 
 sudoku(Rows):- 
 			length(Rows,9),
