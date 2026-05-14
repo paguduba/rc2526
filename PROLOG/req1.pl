@@ -2,6 +2,8 @@ slots_per_week(35).
 
 slots_per_day(7).
 
+
+%nuestra matriz tendrá 10 filas, de tamanno N variable (4,5,3,2,2,2,2,2,2,2,3)
 class_subject_teacher_times('1a', deu, sjk1, 4).
 class_subject_teacher_times('1a', mat, mat1, 5).
 class_subject_teacher_times('1a', eng, anj1, 3).
